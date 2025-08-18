@@ -33,6 +33,14 @@ test = false
 bench = false
 required-features = ["secret-backend-example"]
 
+[lib]
+name = "vector"
+path = "src/lib.rs"
+test = false
+bench = false
+crate-type = ["lib"]
+required-features = ["default-lib"]
+
 [[test]]
 name = "integration"
 path = "tests/integration/lib.rs"
